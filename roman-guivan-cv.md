@@ -2,7 +2,7 @@
 **Senior Full-Stack Software Engineer — Distributed Systems**
 
 Berlin, Germany  
-+49 176 68512421 • guivanrv@gmail.com  
+guivanrv@gmail.com  
 LinkedIn: https://linkedin.com/in/guivarom  
 Portfolio: https://store.steampowered.com/app/1771240
 ---

@@ -1,0 +1,20 @@
+name: Build CV PDF (Typst)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render-paper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      - run: typst compile roman-guivan-cv.typ roman-guivan-cv.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: 'roman-guivan-cv.pdf'
+          if-no-files-found: error
+          retention-days: 30
